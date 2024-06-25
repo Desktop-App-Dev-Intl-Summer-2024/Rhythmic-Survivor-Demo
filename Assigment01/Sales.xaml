@@ -1,0 +1,43 @@
+﻿<Window x:Class="Assigment01.Sales"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assigment01"
+        mc:Ignorable="d"
+        Title="Sales" Height="640" Width="1024">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="644*"/>
+            <ColumnDefinition Width="381*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/tianguis.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="98*"/>
+            <RowDefinition Height="399*"/>
+            <RowDefinition Height="82*"/>
+        </Grid.RowDefinitions>
+        <Menu FlowDirection="RightToLeft" FontSize="16" Grid.ColumnSpan="2">
+            <MenuItem x:Name="mainAppItem" Header="Main App" Click="mainAppItem_Click"/>
+            <MenuItem x:Name="adminAppItem" Header="Admin App" Height="43" Click="adminAppItem_Click"/>
+        </Menu>
+        <Label Content="Sales" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Foreground="White" FontSize="36"/>
+        <Label Content="Select product :" HorizontalAlignment="Left" Margin="148,125,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="White" FontSize="16" Width="148" HorizontalContentAlignment="Right"/>
+        <ComboBox x:Name="productsComboBox" HorizontalAlignment="Left" Margin="322,130,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" SelectionChanged="productsComboBox_SelectionChanged"/>
+        <Label Content="Insert amount (Kg) :" HorizontalAlignment="Left" Margin="148,233,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="White" FontSize="16" Width="148"/>
+        <TextBox x:Name="amountTextBox" HorizontalAlignment="Left" Margin="322,237,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" Width="120" FontSize="16" GotFocus="amountTextBox_GotFocus"/>
+        <Button x:Name="addCartButton" Content="Add to Cart" HorizontalAlignment="Left" Margin="438,323,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="16" Height="33" Width="148" Click="addCartButton_Click"/>
+        <Label Grid.Column="1" Content="Cart" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Button x:Name="buyItems" Content="Buy Items" HorizontalAlignment="Left" Margin="223,356,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="16" Height="33" Width="148" Grid.Column="1" Click="buyItems_Click"/>
+        <Button x:Name="removeButton" Content="Remove Item" HorizontalAlignment="Left" Margin="10,356,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="16" Height="33" Width="148" Grid.Column="1" Click="removeButton_Click" IsEnabled="False"/>
+        <ListBox x:Name="cartListBox" Grid.Row="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,47,10,48" Grid.Column="1" SelectionChanged="cartListBox_SelectionChanged"/>
+        <Label Content="Amount available :" HorizontalAlignment="Left" Margin="148,161,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="White" FontSize="16" Width="148" HorizontalContentAlignment="Right"/>
+        <Label Content="Price (Kg) :" HorizontalAlignment="Left" Margin="148,197,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="White" FontSize="16" Width="148" HorizontalContentAlignment="Right"/>
+        <TextBlock x:Name="amountTextBlock" HorizontalAlignment="Left" Margin="322,166,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Kg" VerticalAlignment="Top" FontSize="16" Foreground="White" Width="120"/>
+        <TextBlock x:Name="priceTextBlock" HorizontalAlignment="Left" Margin="322,202,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" FontSize="16" Foreground="White" Width="120"/>
+
+    </Grid>
+</Window>

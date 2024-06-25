@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Imgs\**" />
+    <EmbeddedResource Remove="Imgs\**" />
+    <None Remove="Imgs\**" />
+    <Page Remove="Imgs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="farm.jpg" />
+    <None Remove="storage.jpg" />
+    <None Remove="tianguis.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="farm.jpg" />
+    <Resource Include="storage.jpg" />
+    <Resource Include="tianguis.jpg" />
+  </ItemGroup>
+
+</Project>

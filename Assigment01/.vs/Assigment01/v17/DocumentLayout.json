@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MisProjectos\\VSProjects\\Assigment01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|d:\\misprojectos\\vsprojects\\assigment01\\sales.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|solutionrelative:sales.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|d:\\misprojectos\\vsprojects\\assigment01\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|solutionrelative:admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|d:\\misprojectos\\vsprojects\\assigment01\\cartinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|solutionrelative:cartinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|d:\\misprojectos\\vsprojects\\assigment01\\sales.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|solutionrelative:sales.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartInfo.cs",
+              "DocumentMoniker": "D:\\MisProjectos\\VSProjects\\Assigment01\\CartInfo.cs",
+              "RelativeDocumentMoniker": "CartInfo.cs",
+              "ToolTip": "D:\\MisProjectos\\VSProjects\\Assigment01\\CartInfo.cs",
+              "RelativeToolTip": "CartInfo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T04:05:07.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sales.xaml",
+              "DocumentMoniker": "D:\\MisProjectos\\VSProjects\\Assigment01\\Sales.xaml",
+              "RelativeDocumentMoniker": "Sales.xaml",
+              "ToolTip": "D:\\MisProjectos\\VSProjects\\Assigment01\\Sales.xaml",
+              "RelativeToolTip": "Sales.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-23T02:48:08.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sales.xaml.cs",
+              "DocumentMoniker": "D:\\MisProjectos\\VSProjects\\Assigment01\\Sales.xaml.cs",
+              "RelativeDocumentMoniker": "Sales.xaml.cs",
+              "ToolTip": "D:\\MisProjectos\\VSProjects\\Assigment01\\Sales.xaml.cs",
+              "RelativeToolTip": "Sales.xaml.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAcwEQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T01:57:54.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Admin.xaml.cs",
+              "DocumentMoniker": "D:\\MisProjectos\\VSProjects\\Assigment01\\Admin.xaml.cs",
+              "RelativeDocumentMoniker": "Admin.xaml.cs",
+              "ToolTip": "D:\\MisProjectos\\VSProjects\\Assigment01\\Admin.xaml.cs",
+              "RelativeToolTip": "Admin.xaml.cs",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAAANAAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T03:14:15.913Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
