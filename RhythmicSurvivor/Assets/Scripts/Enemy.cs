@@ -6,21 +6,29 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private float rangeAttack;
+    private float steps;
+
     private bool isWalking;
 
     AudioManager audioManager;
     MyGameManager gameManager;
     Player player;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        rangeAttack = 0.5f;
-        isWalking = false;
+    enum enemyType { skeleton, slime, shell, golem };
 
+    private void Awake()
+    {
         audioManager = GameObject.FindGameObjectWithTag("Managers").GetComponent<AudioManager>();
         gameManager = GameObject.FindGameObjectWithTag("Managers").GetComponent<MyGameManager>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rangeAttack = 1f;
+        steps = 1f;
+        isWalking = false;
     }
 
     // Update is called once per frame
@@ -28,23 +36,43 @@ public class Enemy : MonoBehaviour
     {
         if (!gameManager.isGamePause())
         {
-            if(Vector3.Distance(transform.position, player.transform.position) > rangeAttack && !isWalking)
+            if(Vector3.Distance(transform.position, player.transform.position) > rangeAttack && audioManager.isHitBeat())
             {
-                Debug.Log("entro");
-                StartCoroutine(walk());
+                Vector3 dir = Vector3.Normalize(transform.position - player.transform.position);
+                transform.position -= new Vector3(dir.x * audioManager.getBPM() * steps, 0f, dir.z * audioManager.getBPM() * steps);
+                //Vector3 step = transform.position - new Vector3(dir.x * steps, 0f, dir.z * steps);
+                //transform.position = Vector3.Lerp(transform.position, step, audioManager.getBPM() * steps);
+                isWalking = true;
+            }
+            else
+            {
+                isWalking = false;
             }
         }
     }
 
-    IEnumerator walk()
+    public void setEnemyType(int type)
     {
-        isWalking = true;
-        while(Vector3.Distance(transform.position, player.transform.position) > 0.1)
+        switch (type)
         {
-            Vector3 dir = Vector3.Normalize(transform.position - player.transform.position);
-            transform.position -= new Vector3(dir.x * audioManager.getBPM() * Time.deltaTime, 0f, dir.z * audioManager.getBPM() * Time.deltaTime);
-            yield return null;
+            case (int)enemyType.skeleton:
+                rangeAttack = 1f;
+                steps = 2f;
+                break;
+            case (int)enemyType.shell:
+                rangeAttack = 0.5f;
+                steps = 1.5f;
+                break;
+            case (int)enemyType.slime:
+                rangeAttack = 0.5f;
+                steps = 1.5f;
+                break;
+            case (int)enemyType.golem:
+                rangeAttack = 5f;
+                steps = 0.5f;
+                break;
+            default:
+                break;
         }
-        isWalking = false;
     }
 }

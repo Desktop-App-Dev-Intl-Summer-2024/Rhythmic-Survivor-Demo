@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\rhythmicsurvivor\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\rhythmicsurvivor\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\assets\\scripts\\mygamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mygamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,30 +26,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
               "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowDIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T14:55:47.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Enemy.cs",
               "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
               "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowCsAAAAAAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAcwEUAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T14:11:26.248Z",
               "EditorCaption": ""
@@ -62,23 +62,21 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\MyGameManager.cs",
               "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\MyGameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MyGameManager.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAIwAgAAAALAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAcwBMAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T14:06:39.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T14:06:39.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
               "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\AudioManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\AudioManager.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwBIAAAAYAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T14:06:14.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T14:06:14.107Z"
             }
           ]
         }

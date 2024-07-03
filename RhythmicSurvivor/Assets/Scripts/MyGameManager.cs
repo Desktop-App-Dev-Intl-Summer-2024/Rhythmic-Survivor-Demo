@@ -9,6 +9,8 @@ public class MyGameManager : MonoBehaviour
     private bool gamePause;
     AudioManager audioManager;
 
+    enum enemyType { skeleton, slime, shell, golem };
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,19 +41,24 @@ public class MyGameManager : MonoBehaviour
     {
         int random = Random.Range(0, 4);
         GameObject spawnPoint = GameObject.FindGameObjectWithTag("EnemySpawn1");
+        GameObject enemy = null;
         switch (random)
         {
             case 0:
-                Instantiate(Resources.Load("EnemyGolem") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy = Instantiate(Resources.Load("EnemyGolem") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.golem);
                 break;
             case 1:
-                Instantiate(Resources.Load("EnemySlime") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy = Instantiate(Resources.Load("EnemySlime") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.slime);
                 break;
             case 2:
-                Instantiate(Resources.Load("EnemySkeleton") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy = Instantiate(Resources.Load("EnemySkeleton") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.skeleton);
                 break;
             case 3:
-                Instantiate(Resources.Load("EnemyShell") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy = Instantiate(Resources.Load("EnemyShell") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.shell);
                 break;
             default:
                 break;
