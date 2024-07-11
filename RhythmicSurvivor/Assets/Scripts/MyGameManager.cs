@@ -7,7 +7,7 @@ public class MyGameManager : MonoBehaviour
     private int spawnSeconds;
 
     private bool gamePause;
-    AudioManager audioManager;
+    private AudioManager audioManager;
 
     enum enemyType { skeleton, slime, shell, golem };
 
@@ -40,23 +40,24 @@ public class MyGameManager : MonoBehaviour
     private void spawnEnemy()
     {
         int random = Random.Range(0, 4);
-        GameObject spawnPoint = GameObject.FindGameObjectWithTag("EnemySpawn1");
+        //int random = (int)enemyType.golem;
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("EnemySpawn");
         GameObject enemy = null;
         switch (random)
         {
-            case 0:
+            case (int)enemyType.golem:
                 enemy = Instantiate(Resources.Load("EnemyGolem") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
                 enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.golem);
                 break;
-            case 1:
+            case (int)enemyType.slime:
                 enemy = Instantiate(Resources.Load("EnemySlime") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
                 enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.slime);
                 break;
-            case 2:
+            case (int)enemyType.skeleton:
                 enemy = Instantiate(Resources.Load("EnemySkeleton") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
                 enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.skeleton);
                 break;
-            case 3:
+            case (int)enemyType.shell:
                 enemy = Instantiate(Resources.Load("EnemyShell") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
                 enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.shell);
                 break;

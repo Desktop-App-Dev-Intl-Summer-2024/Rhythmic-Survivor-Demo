@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - EnemySpawn1
   - PlayerSpawn
   - Managers
+  - PlayerCamera
+  - EnemySpawn
   layers:
   - Default
   - TransparentFX
