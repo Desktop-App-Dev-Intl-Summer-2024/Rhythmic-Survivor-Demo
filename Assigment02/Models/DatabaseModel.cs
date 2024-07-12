@@ -26,14 +26,14 @@ namespace Assigment02.Models
                     response.statusCode = 200;
                     response.statusMessage = "Item added!";
                     response.item = item;
-                    response.cart = null;
+                    response.itemsCart = null;
                 }
                 else
                 {
                     response.statusCode = 100;
                     response.statusMessage = "Fail adding Item!";
                     response.item = null;
-                    response.cart = null;
+                    response.itemsCart = null;
                 }
 
                 connection.Close();
@@ -44,7 +44,7 @@ namespace Assigment02.Models
                 response.statusCode = ex.ErrorCode;
                 response.statusMessage = ex.Message;
                 response.item = null;
-                response.cart = null;
+                response.itemsCart = null;
             }
 
             return response;
@@ -83,14 +83,14 @@ namespace Assigment02.Models
                     response.statusCode = 200;
                     response.statusMessage = "Items retrieved!";
                     response.item = null;
-                    response.cart = cart;
+                    response.itemsCart = cart;
                 }
                 else
                 {
                     response.statusCode = 100;
                     response.statusMessage = "Fail retrieving items!";
                     response.item = null;
-                    response.cart = null;
+                    response.itemsCart = null;
                 }
 
                 connection.Close();
@@ -101,7 +101,7 @@ namespace Assigment02.Models
                 response.statusCode = ex.ErrorCode;
                 response.statusMessage = ex.Message;
                 response.item = null;
-                response.cart = null;
+                response.itemsCart = null;
             }
 
             return response;
@@ -130,14 +130,14 @@ namespace Assigment02.Models
                     response.statusCode = 200;
                     response.statusMessage = "Item found!";
                     response.item = item;
-                    response.cart = null;
+                    response.itemsCart = null;
                 }
                 else
                 {
                     response.statusCode = 100;
                     response.statusMessage = "Item not found!";
                     response.item = null;
-                    response.cart = null;
+                    response.itemsCart = null;
                 }
 
                 connection.Close();
@@ -148,7 +148,7 @@ namespace Assigment02.Models
                 response.statusCode = ex.ErrorCode;
                 response.statusMessage = ex.Message;
                 response.item = null;
-                response.cart = null;
+                response.itemsCart = null;
             }
 
             return response;
@@ -177,14 +177,14 @@ namespace Assigment02.Models
                     response.statusCode = 200;
                     response.statusMessage = "Item updated!";
                     response.item = item;
-                    response.cart = null;
+                    response.itemsCart = null;
                 }
                 else
                 {
                     response.statusCode = 100;
                     response.statusMessage = "Fail updating item!";
                     response.item = null;
-                    response.cart = null;
+                    response.itemsCart = null;
                 }
 
                 connection.Close();
@@ -195,7 +195,7 @@ namespace Assigment02.Models
                 response.statusCode = ex.ErrorCode;
                 response.statusMessage = ex.Message;
                 response.item = null;
-                response.cart = null;
+                response.itemsCart = null;
             }
 
             return response;
@@ -218,14 +218,14 @@ namespace Assigment02.Models
                     response.statusCode = 200;
                     response.statusMessage = "Item deleted!";
                     response.item = null;
-                    response.cart = null;
+                    response.itemsCart = null;
                 }
                 else
                 {
                     response.statusCode = 100;
                     response.statusMessage = "Fail deleting item!";
                     response.item = null;
-                    response.item = null;
+                    response.itemsCart = null;
                 }
 
                 connection.Close();
@@ -236,7 +236,7 @@ namespace Assigment02.Models
                 response.statusCode = ex.ErrorCode;
                 response.statusMessage = ex.Message;
                 response.item = null;
-                response.cart = null;
+                response.itemsCart = null;
             }
 
             return response;

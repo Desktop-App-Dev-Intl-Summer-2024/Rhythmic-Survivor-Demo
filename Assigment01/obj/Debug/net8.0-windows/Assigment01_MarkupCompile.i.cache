@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\MisProjectos\VSProjects\Assigment01\obj\Debug\net8.0-windows\
+D:\MisProjectos\Rhythmic-Survivor-Demo\Assigment01\obj\Debug\net8.0-windows\
 Assigment01
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\MisProjectos\VSProjects\Assigment01\App.xaml
-31138065191
+D:\MisProjectos\Rhythmic-Survivor-Demo\Assigment01\App.xaml
+3-166396203
 
-9-1602381335
-1992003567614
-Admin.xaml;MainWindow.xaml;Sales.xaml;
+10-1487736579
+200213745237
+Views\Admin.xaml;Views\MainWindow.xaml;Views\Sales.xaml;
 
-False
+True
 
