@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: d1a09a8df6a85a44aaad3f455e59e790
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 83
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a37c089c35b0341bd22e1e5451da22
+      internalID: -1263928620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 411
+        width: 74
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47efddc73accd25498d14e776bdfc0e5
+      internalID: 1930912220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 405
+        width: 77
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9614d91cc9678f94c81fd192891e0e4b
+      internalID: 1719490685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 405
+        width: 84
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6592f0d9aab28a9449530c9ee8938022
+      internalID: -1854146626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_4
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 405
+        width: 77
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f23dcfececb58e4998205e64955c454
+      internalID: -1611490135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 220
+        width: 39
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68479847337c6e047bfee18e3799a5d8
+      internalID: -1251999387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 220
+        width: 82
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1680bbcdbd8b0e24f9fcb202f20afe43
+      internalID: -1287383934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_7
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 220
+        width: 62
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08efe84b915624248900871a1a03eaf8
+      internalID: 1462804504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_8
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 223
+        width: 85
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee209bb4a0397bc4a8c499f268da1e6a
+      internalID: 687204904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_9
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 220
+        width: 69
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4c5ed545921ec4db004722453e0a90
+      internalID: 537721000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e144b76c836fdb148b204016975675c1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_0: -1263928620
+      kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_1: 1930912220
+      kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_2: 1719490685
+      kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_3: -1854146626
+      kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_4: -1611490135
+      kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_5: -1251999387
+      kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_6: -1287383934
+      kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_7: 1462804504
+      kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_8: 687204904
+      kisspng-number-numerical-digit-flame-arabic-numerals-fire-digital-5a9a837dee02c5.7519454615200756459749_9: 537721000
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,40 @@
+﻿<Window x:Class="Lab02.DistanceTraveled.DistanceTraveledWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab02.DistanceTraveled"
+        mc:Ignorable="d"
+        Title="DistanceTraveledWindow" Height="640" Width="1024">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="321*"/>
+            <ColumnDefinition Width="191*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF7EA5B"/>
+                <GradientStop Color="#FFFD944A" Offset="0.669"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Menu Margin="0,0,0,110" HorizontalAlignment="Left" Width="1024" Height="38" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Background="#FFB3B3B3">
+            <MenuItem x:Name="shippingCalculatorApp" FontSize="14" Header="Shipping Calculation App" Height="34" Click="shippingCalculatorApp_Click"/>
+            <MenuItem x:Name="scoresApp" FontSize="14" Header="Test Scores App" Click="scoresApp_Click"/>
+            <MenuItem x:Name="rainfallAvgApp" FontSize="14" Header="Rainfall Average App" Click="rainfallAvgApp_Click"/>
+            <MenuItem x:Name="mainApp" FontSize="14" Header="Main Menu" Click="mainApp_Click"/>
+        </Menu>
+        <Label Content="Distant Traveled Calculator" HorizontalAlignment="Left" Margin="290,74,0,0" VerticalAlignment="Top" Height="64" Width="444" FontSize="36" Grid.ColumnSpan="2"/>
+        <Label Content="Speed (mph) :" HorizontalAlignment="Left" Margin="81,103,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Width="159"/>
+        <Label Content="Time (hr) :" HorizontalAlignment="Left" Margin="81,158,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Width="159"/>
+        <TextBox x:Name="speedTextBox" HorizontalAlignment="Left" Margin="245,103,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Speed" VerticalAlignment="Top" Width="120" FontSize="20" Height="37" GotFocus="speedTextBox_GotFocus"/>
+        <TextBox x:Name="timeTextBox" HorizontalAlignment="Left" Margin="245,158,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Time" VerticalAlignment="Top" Width="120" FontSize="20" Height="37" GotFocus="timeTextBox_GotFocus"/>
+        <Button x:Name="calculateButton" Grid.Column="1" Content="Calculate" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" FontSize="20" Height="48" Width="182" Click="calculateButton_Click"/>
+        <DataGrid x:Name="distanceTable" Grid.Column="1" MinColumnWidth="67" Margin="10,10,10,10" Grid.Row="1"/>
+    </Grid>
+</Window>

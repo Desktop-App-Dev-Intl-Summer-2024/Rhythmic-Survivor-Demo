@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\Assigment01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\assigment01\\views\\sales.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|solutionrelative:views\\sales.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\assigment01\\views\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|solutionrelative:views\\admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\assigment01\\views\\sales.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|solutionrelative:views\\sales.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51B5C950-CCA4-4F0C-B911-C20E40F1D432}|Assigment01.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\assigment01\\models\\iteminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -38,18 +38,17 @@
               "RelativeToolTip": "Models\\ItemInfo.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T02:08:05.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T02:08:05.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Sales.xaml.cs",
               "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\Assigment01\\Views\\Sales.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Sales.xaml.cs",
               "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\Assigment01\\Views\\Sales.xaml.cs",
               "RelativeToolTip": "Views\\Sales.xaml.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAqwHgAAAAuAAAA",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAqwHgAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T01:57:54.534Z",
               "EditorCaption": ""
@@ -63,18 +62,17 @@
               "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\Assigment01\\Views\\Admin.xaml",
               "RelativeToolTip": "Views\\Admin.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-12T02:01:56.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T02:01:56.639Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Admin.xaml.cs",
               "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\Assigment01\\Views\\Admin.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Admin.xaml.cs",
               "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\Assigment01\\Views\\Admin.xaml.cs",
               "RelativeToolTip": "Views\\Admin.xaml.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAgwH4AAAA8AAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAowC4AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T03:14:15.913Z",
               "EditorCaption": ""

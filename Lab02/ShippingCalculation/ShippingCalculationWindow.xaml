@@ -1,0 +1,38 @@
+﻿<Window x:Class="Lab02.ShippingCalculation.ShippingCalculationWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab02.ShippingCalculation"
+        mc:Ignorable="d"
+        Title="ShippingCalculationWindows" Height="640" Width="1024">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="192*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFD767F9" Offset="0"/>
+                <GradientStop Color="#FF3C56BB" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Shipping Calculator" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White" Height="58" Width="320"/>
+        <Label Content="Package Weight (kg):" HorizontalAlignment="Right" Margin="0,0,618,242" VerticalAlignment="Bottom" FontSize="18" Foreground="White" Height="34" Width="210" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="packageWeightTextBox" Margin="432,278,432,0" TextWrapping="Wrap" Text="Weight" FontSize="18" Background="#84FFFFFF" Foreground="#FFEFEFEF" GotFocus="packageWeightTextBox_GotFocus" Height="34" VerticalAlignment="Top"/>
+        <Button x:Name="calculateButton" Content="Calculate" Margin="794,496,63,10" Click="calculateButton_Click"/>
+        <TextBlock x:Name="costTextBlock" TextWrapping="Wrap" Text="Shipping Cost:" Foreground="White" FontSize="18" Margin="0,0,63,77" Height="51" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="254"/>
+        <Menu HorizontalAlignment="Center" Width="1024" Height="41" VerticalAlignment="Top" Background="#FFADADAD">
+            <MenuItem x:Name="distanceTraveledApp" Header="Distance Traveled App" Click="distanceTraveledApp_Click" Height="39" Width="144" FontSize="14"/>
+            <MenuItem x:Name="scoresApp" Header="Test Scores App" Click="scoresApp_Click" FontSize="14"/>
+            <MenuItem x:Name="rainfallAvgApp" FontSize="14" Header="Rainfall Average App" Click="rainfallAvgApp_Click"/>
+            <MenuItem x:Name="mainApp" Header="Main Menu" Click="mainApp_Click" FontSize="14"/>
+        </Menu>
+        <Label Content="Distance Traveled (Miles):" HorizontalAlignment="Right" Margin="0,0,618,165" VerticalAlignment="Bottom" FontSize="18" Foreground="White" Height="34" Width="210"/>
+        <TextBox x:Name="distanceTextBox" Margin="432,353,432,0" TextWrapping="Wrap" Text="Distance" FontSize="18" Background="#84FFFFFF" Foreground="#FFEFEFEF" GotFocus="distanceTextBox_GotFocus" Height="34" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

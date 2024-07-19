@@ -1,0 +1,45 @@
+﻿<Window x:Class="Lab02.TestScores.TestScoresWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab02.TestScores"
+        mc:Ignorable="d"
+        Title="TestScoresWindow" Height="640" Width="1024">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="161*"/>
+            <ColumnDefinition Width="191*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="166*"/>
+            <RowDefinition Height="297*"/>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="78*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF02255D" Offset="0"/>
+                <GradientStop Color="#FF5576DA" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Menu Background="#FFA0A0A0" Grid.ColumnSpan="3" Margin="0,0,0,128">
+            <MenuItem x:Name="shippingCalculationApp" FontSize="14" Header="Shipping Calculation App" Height="34" Click="shippingCalculationApp_Click"/>
+            <MenuItem x:Name="distanceTraveledApp" FontSize="14" Header="Distance Traveled App" Click="distanceTraveledApp_Click"/>
+            <MenuItem x:Name="rainfallAvgApp" FontSize="14" Header="Rainfall Average App" Click="rainfallAvgApp_Click"/>
+            <MenuItem x:Name="mainApp" FontSize="14" Header="Main Menu" Click="mainApp_Click"/>
+        </Menu>
+        <Label Content="Test Scores Average Calculator" HorizontalAlignment="Left" Margin="160,67,0,0" VerticalAlignment="Top" FontSize="36" Foreground="#FFE8E8E8" Height="58" Width="510" Grid.ColumnSpan="3"/>
+        <Label Content="First Score :" HorizontalAlignment="Left" Margin="160,64,0,0" VerticalAlignment="Top" FontSize="20" Grid.Row="1" Height="37" Width="150" Foreground="#FFCACACA"/>
+        <Label Content="Second Score :" HorizontalAlignment="Left" Margin="160,106,0,0" VerticalAlignment="Top" FontSize="20" Grid.Row="1" Height="37" Width="150" Foreground="#FFCACACA"/>
+        <Label Content="Third Score :" HorizontalAlignment="Left" Margin="160,148,0,0" VerticalAlignment="Top" FontSize="20" Grid.Row="1" Height="37" Width="150" Foreground="#FFCACACA"/>
+        <TextBox x:Name="score1TextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="10,72,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Width="120" FontSize="20" Background="#7FFFFFFF" GotFocus="score1TextBox_GotFocus"/>
+        <TextBox x:Name="score2TextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="10,114,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Width="120" FontSize="20" Background="#7FFFFFFF" GotFocus="score2TextBox_GotFocus"/>
+        <TextBox x:Name="score3TextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="10,156,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Score" VerticalAlignment="Top" Width="120" FontSize="20" Background="#7FFFFFFF" GotFocus="score3TextBox_GotFocus"/>
+        <Button x:Name="calculateButton" Grid.Column="2" Content="Calculate" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="38" Width="138" FontSize="20" Click="calculateButton_Click"/>
+        <TextBlock x:Name="scoreAverageTextBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="10,72,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tests Score Average :" VerticalAlignment="Top" FontSize="20" Foreground="#FFCCC9C9"/>
+        <TextBlock x:Name="letterGradeTextBlock" Grid.Column="2" HorizontalAlignment="Left" Margin="10,133,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Letter Grade : " VerticalAlignment="Top" FontSize="20" Foreground="#FFCCC9C9"/>
+
+    </Grid>
+</Window>
