@@ -6,20 +6,16 @@ public class AudioManager : MonoBehaviour
 {
     //class variables
     private AudioSource audioSource;
-    [SerializeField]
-    private AudioClip easyLevelClip;
-    [SerializeField]
+    [SerializeField] private AudioClip easyLevelClip;
     private float bpm = 138;
-    private float time;
-    private bool hitBeat;
+    private float time = 0;
+    private bool hitBeat = false;
 
     // Start is called before the first frame update
     void Start()
     {
         audioSource = gameObject.GetComponent<AudioSource>();
         bpm = 60f / bpm;
-        time = 0;
-        hitBeat = false;
     }
 
     // Update is called once per frame

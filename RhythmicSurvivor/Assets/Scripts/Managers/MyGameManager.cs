@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class MyGameManager : MonoBehaviour
 {
-    private int spawnSeconds;
-
-    private bool gamePause;
+    private int spawnSeconds = 10;
+    private bool gamePause = true;
     private AudioManager audioManager;
 
     enum enemyType { skeleton, slime, shell, golem };
@@ -14,8 +13,6 @@ public class MyGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gamePause = false;
-        spawnSeconds = 10;
         spawnCharacter1();
         StartCoroutine(spawningEnemies());
     }
@@ -40,7 +37,6 @@ public class MyGameManager : MonoBehaviour
     private void spawnEnemy()
     {
         int random = Random.Range(0, 4);
-        //int random = (int)enemyType.golem;
         GameObject spawnPoint = GameObject.FindGameObjectWithTag("EnemySpawn");
         GameObject enemy = null;
         switch (random)
@@ -64,6 +60,17 @@ public class MyGameManager : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void restartSpawningEnemies()
+    {
+        StartCoroutine(spawningEnemies());
+    }
+
+    //setters
+    public void setGamePause(bool status)
+    {
+        gamePause = status;
     }
 
     //getters

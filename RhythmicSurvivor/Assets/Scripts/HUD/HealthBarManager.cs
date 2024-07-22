@@ -5,9 +5,8 @@ using UnityEngine.UI;
 
 public class HealthBarManager : MonoBehaviour
 {
-    [SerializeField]
-    private Image healthBar;
-    Camera mainCam;
+    [SerializeField] private Image healthBar;
+    private Camera mainCam;
 
     // Start is called before the first frame update
     void Start()

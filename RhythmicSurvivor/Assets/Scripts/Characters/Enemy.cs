@@ -5,20 +5,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField]
     private int maxHP;
-    [SerializeField]
     private int currentHP;
-    [SerializeField]
     private int damage;
-    [SerializeField]
     private float rangeAttack;
-    [SerializeField]
     private float steps;
     private bool attackInCooldown = false;
     private bool isAttacking = false;
     private bool isDead = false;
-    [SerializeField]
     private float attackTimeCooldown;
     private int type;
 
@@ -79,6 +73,7 @@ public class Enemy : MonoBehaviour
 
         if(currentHP <= 0)
         {
+            player.addEnemyExp(10);
             StartCoroutine(death());
         }
     }

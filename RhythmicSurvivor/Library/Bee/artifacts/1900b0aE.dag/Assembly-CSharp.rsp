@@ -361,6 +361,7 @@
 "Assets/Scripts/Characters/Enemy.cs"
 "Assets/Scripts/Characters/Player.cs"
 "Assets/Scripts/HUD/HealthBarManager.cs"
+"Assets/Scripts/HUD/HUDManager.cs"
 "Assets/Scripts/Managers/AudioManager.cs"
 "Assets/Scripts/Managers/MyGameManager.cs"
 -langversion:9.0
