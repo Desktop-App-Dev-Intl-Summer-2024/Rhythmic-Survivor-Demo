@@ -8,13 +8,16 @@ public class MyGameManager : MonoBehaviour
     private bool gamePause = true;
     private AudioManager audioManager;
 
+    public PlayerData currentGame { get; private set; }
+    public List<PlayerData> gamesData { get; set; }
+    //public int gameSlotSelected { get; set; } = -1;
+
     enum enemyType { skeleton, slime, shell, golem };
 
     // Start is called before the first frame update
     void Start()
     {
-        spawnCharacter1();
-        StartCoroutine(spawningEnemies());
+
     }
 
     // Update is called once per frame
@@ -26,11 +29,83 @@ public class MyGameManager : MonoBehaviour
         }
     }
 
+    //game functions
+    public void startGame()
+    {
+        gamePause = false;
+        StartCoroutine(spawningEnemies());
+    }
+    public void restartGame()
+    {
+        foreach(Enemy enemy in FindObjectsOfType<Enemy>())
+        {
+            Destroy(enemy.gameObject);
+        }
+
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("PlayerSpawn");
+        Player player = FindObjectOfType<Player>();
+        player.gameObject.transform.position = spawnPoint.transform.position;
+        player.setLevels(currentGame.damageLevel, currentGame.healthLevel);
+        player.initializePlayer(currentGame.damageLevel, currentGame.healthLevel);
+
+        gamePause = false;
+        StartCoroutine(spawningEnemies());
+    }
+    public void returnMainMenu()
+    {
+        foreach (Enemy enemy in FindObjectsOfType<Enemy>())
+        {
+            Destroy(enemy.gameObject);
+        }
+
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("PlayerSpawn");
+        Player player = FindObjectOfType<Player>();
+        player.gameObject.transform.position = spawnPoint.transform.position;
+        player.setLevels(currentGame.damageLevel, currentGame.healthLevel);
+        player.initializePlayer(currentGame.damageLevel, currentGame.healthLevel);
+    }
+
     //spawn Player
-    public void spawnCharacter1()
+    public void characterSelected(int slotSelected, int character)
+    {
+        gamesData[slotSelected].character = character;
+        currentGame = gamesData[slotSelected];
+
+        switch (character)
+        {
+            case 1:
+                spawnCharacter1(slotSelected);
+                break;
+            case 2:
+                spawnCharacter2(slotSelected);
+                break;
+        }
+    }
+    public void spawnPlayer(int slotSelected)
+    {
+        currentGame = gamesData[slotSelected];
+        switch (currentGame.character)
+        {
+            case 1:
+                spawnCharacter1(slotSelected);
+                break;
+            case 2:
+                spawnCharacter2(slotSelected);
+                break;
+        }
+    }
+    public void spawnCharacter1(int slotSelected)
     {
         GameObject spawnPoint = GameObject.FindGameObjectWithTag("PlayerSpawn");
-        Instantiate(Resources.Load("PlayerCharacter1") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        GameObject player = Instantiate(Resources.Load("PlayerCharacter1") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        player.GetComponent<Player>().initializePlayer(currentGame.damageLevel, currentGame.healthLevel);
+    }
+
+    public void spawnCharacter2(int slotSelected)
+    {
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("PlayerSpawn");
+        GameObject player = Instantiate(Resources.Load("PlayerCharacter2") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        player.GetComponent<Player>().initializePlayer(currentGame.damageLevel, currentGame.healthLevel);
     }
 
     //spawn Enemy

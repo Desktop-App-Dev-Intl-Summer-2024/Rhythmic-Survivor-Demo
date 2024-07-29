@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\GameAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD70EAD0-B43A-4D4F-AA53-DB89033598D1}|GameAPI.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\gameapi\\models\\databasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD70EAD0-B43A-4D4F-AA53-DB89033598D1}|GameAPI.csproj|solutionrelative:models\\databasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD70EAD0-B43A-4D4F-AA53-DB89033598D1}|GameAPI.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\gameapi\\models\\serverresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD70EAD0-B43A-4D4F-AA53-DB89033598D1}|GameAPI.csproj|solutionrelative:models\\serverresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD70EAD0-B43A-4D4F-AA53-DB89033598D1}|GameAPI.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\gameapi\\controllers\\playerdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD70EAD0-B43A-4D4F-AA53-DB89033598D1}|GameAPI.csproj|solutionrelative:controllers\\playerdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD70EAD0-B43A-4D4F-AA53-DB89033598D1}|GameAPI.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\gameapi\\models\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD70EAD0-B43A-4D4F-AA53-DB89033598D1}|GameAPI.csproj|solutionrelative:models\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseModel.cs",
+              "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\GameAPI\\Models\\DatabaseModel.cs",
+              "RelativeDocumentMoniker": "Models\\DatabaseModel.cs",
+              "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\GameAPI\\Models\\DatabaseModel.cs",
+              "RelativeToolTip": "Models\\DatabaseModel.cs",
+              "ViewState": "AQIAALkAAAAAAAAAAAAIwMcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T13:51:48.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerDataController.cs",
+              "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\GameAPI\\Controllers\\PlayerDataController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PlayerDataController.cs",
+              "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\GameAPI\\Controllers\\PlayerDataController.cs",
+              "RelativeToolTip": "Controllers\\PlayerDataController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAIwDsAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T13:48:02.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServerResponse.cs",
+              "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\GameAPI\\Models\\ServerResponse.cs",
+              "RelativeDocumentMoniker": "Models\\ServerResponse.cs",
+              "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\GameAPI\\Models\\ServerResponse.cs",
+              "RelativeToolTip": "Models\\ServerResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T13:51:50.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerData.cs",
+              "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\GameAPI\\Models\\PlayerData.cs",
+              "RelativeDocumentMoniker": "Models\\PlayerData.cs",
+              "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\GameAPI\\Models\\PlayerData.cs",
+              "RelativeToolTip": "Models\\PlayerData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T13:45:49.848Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

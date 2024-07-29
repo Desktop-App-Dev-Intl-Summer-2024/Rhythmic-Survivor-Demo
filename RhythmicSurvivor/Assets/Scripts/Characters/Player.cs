@@ -28,9 +28,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentMaxHP = baseMaxHp;
-        currentHP = currentMaxHP;
-        currentDamage = baseDamage;
+        
 
         animator = GetComponent<Animator>();
         camera = GameObject.FindGameObjectWithTag("PlayerCamera").GetComponent<CinemachineVirtualCamera>();
@@ -100,6 +98,10 @@ public class Player : MonoBehaviour
             hitCount++;
         }
     }
+    public void resetCounter()
+    {
+        hitCount = 0;
+    }
 
     //combat
     public void playerGetHit(Enemy enemyInfo)
@@ -112,6 +114,7 @@ public class Player : MonoBehaviour
         {
             isDead = true;
             animator.Play("Die01");
+            FindObjectOfType<GUIManager>().lostGame();
         }
     }
 
@@ -135,14 +138,29 @@ public class Player : MonoBehaviour
     {
         damageLevel++;
         currentDamage = baseDamage + damageLevel;
-        Debug.Log("damage " + currentDamage);
     }
 
     public void upgradeHealth()
     {
         healthLevel++;
         currentMaxHP = baseMaxHp + healthLevel;
-        Debug.Log("health " + currentMaxHP);
+    }
+
+    //initiliaze player
+    public void initializePlayer(int damageLevel, int healthLevel)
+    {
+        currentMaxHP = baseMaxHp + healthLevel;
+        currentHP = currentMaxHP;
+        currentDamage = baseDamage + damageLevel;
+    }
+    public void setLevels(int _damageLevel, int _healthLevel)
+    {
+        damageLevel = _damageLevel;
+        healthLevel = _healthLevel;
+    }
+    public void revivePlayer()
+    {
+        animator.Play("Idle");
     }
 
     //getters
@@ -154,6 +172,16 @@ public class Player : MonoBehaviour
     public int getHitCount()
     {
         return hitCount;
+    }
+
+    public int getDamageLevel()
+    {
+        return damageLevel;
+    }
+
+    public int getHealthLevel()
+    {
+        return healthLevel;
     }
 
     public bool getIsAttacking()
@@ -198,6 +226,6 @@ public class Player : MonoBehaviour
         animator.Play("LevelUp");
         actualExp = actualExp % requireExp;
         yield return new WaitForSeconds(2f);
-        FindObjectOfType<HUDManager>().showLevelUpPanel();
+        FindObjectOfType<GUIManager>().showLevelUpPanel();
     }
 }

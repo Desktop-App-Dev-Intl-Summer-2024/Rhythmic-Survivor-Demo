@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if(time > bpm)
+        if (time > bpm)
         {
             hitBeat = true;
             time = 0;
@@ -34,10 +34,18 @@ public class AudioManager : MonoBehaviour
     }
 
     //public methods
-    public void startEasyLevelMusic()
+    public void startGame()
     {
-        audioSource.clip = easyLevelClip;
+        time = 0;
         audioSource.Play();
+    }
+    public void pauseMusic()
+    {
+        audioSource.Pause();
+    }
+    public void resumeMusic()
+    {
+        audioSource.UnPause();
     }
 
     //getters
