@@ -140,7 +140,6 @@ public class GUIManager : MonoBehaviour
         }
         else
         {
-            //gameManager.gameSlotSelected = slotSelected;
             saveSlotsPanel.SetActive(false);
             characterSelectionPanel.SetActive(true);
         }
@@ -156,7 +155,6 @@ public class GUIManager : MonoBehaviour
         }
         else
         {
-            //gameManager.gameSlotSelected = slotSelected;
             saveSlotsPanel.SetActive(false);
             characterSelectionPanel.SetActive(true);
         }
@@ -172,7 +170,6 @@ public class GUIManager : MonoBehaviour
         }
         else
         {
-            //gameManager.gameSlotSelected = slotSelected;
             saveSlotsPanel.SetActive(false);
             characterSelectionPanel.SetActive(true);
         }
@@ -186,7 +183,6 @@ public class GUIManager : MonoBehaviour
 
     public void loadSelectedSlot()
     {
-        //gameManager.gameSlotSelected = slotSelected;
         gameManager.spawnPlayer(slotSelected);
         saveSlotsPanel.SetActive(false);
         deleteButton.SetActive(false);
@@ -245,6 +241,13 @@ public class GUIManager : MonoBehaviour
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        if(time >= 1800 && !gameManager.isFirstBossSpawn())
+        {
+            GameObject finalBossSpawn = GameObject.FindGameObjectWithTag("FinalBossSpawn");
+            Instantiate(Resources.Load("FinalBoss") as GameObject, finalBossSpawn.transform.position, finalBossSpawn.transform.rotation);
+            gameManager.setFirstBossSpawn(true);
+        }
     }
 
     private void updateClockScale()

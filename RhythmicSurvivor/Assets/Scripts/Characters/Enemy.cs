@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gameManager.isGamePause() && !isDead)
+        if (!gameManager.isGamePause() && !isDead && !player.getIsDead())
         {
             if(Vector3.Distance(transform.position, player.transform.position) > rangeAttack && audioManager.isHitBeat())
             {

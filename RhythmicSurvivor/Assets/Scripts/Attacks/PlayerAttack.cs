@@ -20,9 +20,15 @@ public class PlayerAttack : MonoBehaviour
     {
         Player player = FindObjectOfType<Player>();
         Enemy enemy = other.GetComponent<Enemy>();
+        FinalBoss boss = other.GetComponent<FinalBoss>();
+
         if (enemy && player.getIsAttacking())
         {
             enemy.getHit(player);
+        }
+        else if(boss && player.getIsAttacking())
+        {
+            boss.getHit(player);
         }
     }
 }

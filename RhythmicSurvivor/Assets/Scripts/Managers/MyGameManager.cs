@@ -5,12 +5,14 @@ using UnityEngine;
 public class MyGameManager : MonoBehaviour
 {
     private int spawnSeconds = 10;
-    private bool gamePause = true;
+    private bool gamePause = false;
+
+    private bool firstBossSpawn = false;
+
     private AudioManager audioManager;
 
     public PlayerData currentGame { get; private set; }
     public List<PlayerData> gamesData { get; set; }
-    //public int gameSlotSelected { get; set; } = -1;
 
     enum enemyType { skeleton, slime, shell, golem };
 
@@ -23,10 +25,7 @@ public class MyGameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gamePause)
-        {
-
-        }
+        
     }
 
     //game functions
@@ -111,25 +110,26 @@ public class MyGameManager : MonoBehaviour
     //spawn Enemy
     private void spawnEnemy()
     {
-        int random = Random.Range(0, 4);
-        GameObject spawnPoint = GameObject.FindGameObjectWithTag("EnemySpawn");
+        int typeRandom = Random.Range(0, 4);
+        GameObject[] spawns = GameObject.FindGameObjectsWithTag("EnemySpawn");
+        int indexSpawn = Random.Range(0, spawns.Length);
         GameObject enemy = null;
-        switch (random)
+        switch (typeRandom)
         {
             case (int)enemyType.golem:
-                enemy = Instantiate(Resources.Load("EnemyGolem") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy = Instantiate(Resources.Load("EnemyGolem") as GameObject, spawns[indexSpawn].transform.position, spawns[indexSpawn].transform.rotation);
                 enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.golem);
                 break;
             case (int)enemyType.slime:
-                enemy = Instantiate(Resources.Load("EnemySlime") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy = Instantiate(Resources.Load("EnemySlime") as GameObject, spawns[indexSpawn].transform.position, spawns[indexSpawn].transform.rotation);
                 enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.slime);
                 break;
             case (int)enemyType.skeleton:
-                enemy = Instantiate(Resources.Load("EnemySkeleton") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy = Instantiate(Resources.Load("EnemySkeleton") as GameObject, spawns[indexSpawn].transform.position, spawns[indexSpawn].transform.rotation);
                 enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.skeleton);
                 break;
             case (int)enemyType.shell:
-                enemy = Instantiate(Resources.Load("EnemyShell") as GameObject, spawnPoint.transform.position, spawnPoint.transform.rotation);
+                enemy = Instantiate(Resources.Load("EnemyShell") as GameObject, spawns[indexSpawn].transform.position, spawns[indexSpawn].transform.rotation);
                 enemy.GetComponent<Enemy>().setEnemyType((int)enemyType.shell);
                 break;
             default:
@@ -147,11 +147,19 @@ public class MyGameManager : MonoBehaviour
     {
         gamePause = status;
     }
+    public void setFirstBossSpawn(bool status)
+    {
+        firstBossSpawn = status;
+    }
 
     //getters
     public bool isGamePause()
     {
         return gamePause;
+    }
+    public bool isFirstBossSpawn()
+    {
+        return firstBossSpawn;
     }
 
     //courotines

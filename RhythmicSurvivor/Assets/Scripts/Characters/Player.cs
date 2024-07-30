@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private int currentMaxHP;
+    private int currentMaxHP = 1000;
     private int baseMaxHp = 100;
-    private int currentHP;
+    private int currentHP = 1000;
     private int currentDamage;
     private int baseDamage = 10;
     private int hitCount = 0;
@@ -25,11 +25,12 @@ public class Player : MonoBehaviour
 
     private AudioManager audioManager;
     private MyGameManager gameManager;
+
+    private enum finalBossAttackTypes { bite = 1, claws };
+
     // Start is called before the first frame update
     void Start()
     {
-        
-
         animator = GetComponent<Animator>();
         camera = GameObject.FindGameObjectWithTag("PlayerCamera").GetComponent<CinemachineVirtualCamera>();
         camera.Follow = transform;
@@ -111,6 +112,30 @@ public class Player : MonoBehaviour
         healthBarManager.updateHealthBar(currentHP, currentMaxHP);
 
         if(currentHP <= 0)
+        {
+            isDead = true;
+            animator.Play("Die01");
+            FindObjectOfType<GUIManager>().lostGame();
+        }
+    }
+
+    public void playerGetHit(FinalBoss boss, int attackType)
+    {
+        StartCoroutine(getHit());
+        switch (attackType)
+        {
+            case (int)finalBossAttackTypes.bite:
+                currentHP -= boss.getBiteDamage();
+                break;
+            case (int)finalBossAttackTypes.claws:
+                currentHP -= boss.getClawDamage();
+                Vector3 dir = transform.position - boss.transform.position;
+                transform.position += new Vector3(dir.x, 0f, dir.z * 3f);
+                break;
+        }
+        healthBarManager.updateHealthBar(currentHP, currentMaxHP);
+
+        if (currentHP <= 0)
         {
             isDead = true;
             animator.Play("Die01");

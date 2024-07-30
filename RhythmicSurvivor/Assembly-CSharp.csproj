@@ -62,9 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
     <Compile Include="Assets\Scripts\JSON\RequestManager.cs" />
+    <Compile Include="Assets\Scripts\Characters\FinalBoss.cs" />
     <Compile Include="Assets\Scripts\GUI\GUIManager.cs" />
     <Compile Include="Assets\Scripts\JSON\ServerResponse.cs" />
     <Compile Include="Assets\Models\Mini Simple Characters Skeleton Demo\Readme\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Attacks\FinalBossAttack.cs" />
     <Compile Include="Assets\Scripts\Attacks\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Characters\Enemy.cs" />
     <Compile Include="Assets\Scripts\Characters\Player.cs" />
