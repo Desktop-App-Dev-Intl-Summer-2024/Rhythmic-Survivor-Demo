@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private int currentMaxHP = 1000;
+    private int currentMaxHP;
     private int baseMaxHp = 100;
-    private int currentHP = 1000;
+    private int currentHP;
     private int currentDamage;
     private int baseDamage = 10;
     private int hitCount = 0;
@@ -168,7 +168,9 @@ public class Player : MonoBehaviour
     public void upgradeHealth()
     {
         healthLevel++;
+        currentHP += healthLevel;
         currentMaxHP = baseMaxHp + healthLevel;
+        healthBarManager.updateHealthBar(currentHP, currentMaxHP);
     }
 
     //initiliaze player
@@ -186,6 +188,11 @@ public class Player : MonoBehaviour
     public void revivePlayer()
     {
         animator.Play("Idle");
+        isDead = false;
+        currentMaxHP = baseMaxHp + healthLevel;
+        currentHP = currentMaxHP;
+        healthBarManager.updateHealthBar(currentHP, currentMaxHP);
+        hitCount = 0;
     }
 
     //getters

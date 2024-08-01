@@ -205,6 +205,12 @@ public class GUIManager : MonoBehaviour
         mainMenuPanel.SetActive(true);
     }
 
+    public void returnSaveSlotsButton()
+    {
+        saveSlotsPanel.SetActive(true);
+        characterSelectionPanel.SetActive(false);
+    }
+
     //main menu functions
     public void playButton()
     {
@@ -242,11 +248,9 @@ public class GUIManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(time % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-        if(time >= 1800 && !gameManager.isFirstBossSpawn())
+        if(time >= 300 && !gameManager.isFirstBossSpawn())
         {
-            GameObject finalBossSpawn = GameObject.FindGameObjectWithTag("FinalBossSpawn");
-            Instantiate(Resources.Load("FinalBoss") as GameObject, finalBossSpawn.transform.position, finalBossSpawn.transform.rotation);
-            gameManager.setFirstBossSpawn(true);
+            gameManager.spawnFinalBoss();
         }
     }
 
@@ -275,6 +279,9 @@ public class GUIManager : MonoBehaviour
         switch (hitCount / 5)
         {
             case 0:
+                x1Combo.SetActive(false);
+                x2Combo.SetActive(false);
+                x3Combo.SetActive(false);
                 break;
             case 1:
                 x1Combo.SetActive(true);
@@ -373,6 +380,7 @@ public class GUIManager : MonoBehaviour
         }
         gameManager.currentGame.damageLevel = player.getDamageLevel();
         gameManager.currentGame.healthLevel = player.getHealthLevel();
+        audioManager.stopMusic();
         StartCoroutine(saveGameDataFinishedGame(gameManager.currentGame, victoryPanel));
     }
     public void lostGame()
@@ -384,6 +392,7 @@ public class GUIManager : MonoBehaviour
         }
         gameManager.currentGame.damageLevel = player.getDamageLevel();
         gameManager.currentGame.healthLevel = player.getHealthLevel();
+        audioManager.stopMusic();
         StartCoroutine(saveGameDataFinishedGame(gameManager.currentGame, defeatPanel));
     }
 
@@ -394,6 +403,7 @@ public class GUIManager : MonoBehaviour
         gameManager.returnMainMenu();
         victoryPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
+        time = 0;
     }
 
     //defeat panel
@@ -403,6 +413,7 @@ public class GUIManager : MonoBehaviour
         gameManager.returnMainMenu();
         defeatPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
+        time = 0;
     }
 
     //instructions courutines

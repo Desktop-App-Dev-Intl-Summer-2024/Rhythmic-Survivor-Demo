@@ -365,7 +365,6 @@
 "Assets/Scripts/Characters/Player.cs"
 "Assets/Scripts/GUI/GUIManager.cs"
 "Assets/Scripts/GUI/HealthBarManager.cs"
-"Assets/Scripts/JSON/RequestManager.cs"
 "Assets/Scripts/JSON/ServerResponse.cs"
 "Assets/Scripts/Managers/AudioManager.cs"
 "Assets/Scripts/Managers/MyGameManager.cs"

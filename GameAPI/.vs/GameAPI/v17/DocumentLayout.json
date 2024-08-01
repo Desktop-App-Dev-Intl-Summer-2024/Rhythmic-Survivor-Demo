@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Models\\DatabaseModel.cs",
               "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\GameAPI\\Models\\DatabaseModel.cs",
               "RelativeToolTip": "Models\\DatabaseModel.cs",
-              "ViewState": "AQIAALkAAAAAAAAAAAAIwMcAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAIwAwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T13:51:48.755Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "Controllers\\PlayerDataController.cs",
               "ViewState": "AQIAACwAAAAAAAAAAAAIwDsAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T13:48:02.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T13:48:02.842Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Models\\ServerResponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T13:51:50.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T13:51:50.256Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "Models\\PlayerData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T13:45:49.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T13:45:49.848Z"
             }
           ]
         }

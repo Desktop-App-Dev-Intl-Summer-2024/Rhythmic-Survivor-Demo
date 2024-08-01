@@ -7,6 +7,7 @@ public class EnemyAttack : MonoBehaviour
 {
     private Enemy enemyInfo;
     private AudioManager audioManager;
+    private MyGameManager gameManager;
     private Player player;
 
     private Vector3 dir;
@@ -17,18 +18,18 @@ public class EnemyAttack : MonoBehaviour
     void Start()
     {
         audioManager = FindAnyObjectByType<AudioManager>();
+        gameManager = FindAnyObjectByType<MyGameManager>();
         player = FindAnyObjectByType<Player>();
+
         dir = Vector3.Normalize(player.transform.position - transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(enemyInfo.getEnemyType() == (int)enemyType.golem && audioManager.isHitBeat())
+        if(enemyInfo.getEnemyType() == (int)enemyType.golem && audioManager.isHitBeat() && !gameManager.isGamePause())
         {
-            float time = audioManager.getBPM();
-            float y = dir.y + (1.5f * Mathf.Sin(30) * time) - (0.5f * -9.8f * Mathf.Pow(time, 2));
-            transform.position += new Vector3(dir.x * audioManager.getBPM(), -y, dir.z * audioManager.getBPM());
+            transform.position += new Vector3(dir.x * audioManager.getBPM() * 2, dir.y * audioManager.getBPM(), dir.z * audioManager.getBPM() * 2);
 
             if(transform.position.y <= 0)
             {

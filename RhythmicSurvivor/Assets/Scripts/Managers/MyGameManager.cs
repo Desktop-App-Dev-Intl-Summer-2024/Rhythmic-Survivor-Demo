@@ -5,7 +5,7 @@ using UnityEngine;
 public class MyGameManager : MonoBehaviour
 {
     private int spawnSeconds = 10;
-    private bool gamePause = false;
+    private bool gamePause = true;
 
     private bool firstBossSpawn = false;
 
@@ -25,7 +25,20 @@ public class MyGameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!gamePause)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                FindObjectOfType<GUIManager>().pauseGame();
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                FindObjectOfType<GUIManager>().resumeGame();
+            }
+        }
     }
 
     //game functions
@@ -62,6 +75,7 @@ public class MyGameManager : MonoBehaviour
         player.gameObject.transform.position = spawnPoint.transform.position;
         player.setLevels(currentGame.damageLevel, currentGame.healthLevel);
         player.initializePlayer(currentGame.damageLevel, currentGame.healthLevel);
+        firstBossSpawn = false;
     }
 
     //spawn Player
@@ -142,14 +156,23 @@ public class MyGameManager : MonoBehaviour
         StartCoroutine(spawningEnemies());
     }
 
+    public void spawnFinalBoss()
+    {
+        StopCoroutine(spawningEnemies());
+        foreach(Enemy enemy in FindObjectsOfType<Enemy>())
+        {
+            Destroy(enemy.gameObject);
+        }
+
+        GameObject finalBossSpawn = GameObject.FindGameObjectWithTag("FinalBossSpawn");
+        Instantiate(Resources.Load("FinalBoss") as GameObject, finalBossSpawn.transform.position, finalBossSpawn.transform.rotation);
+        firstBossSpawn = true;
+    }
+
     //setters
     public void setGamePause(bool status)
     {
         gamePause = status;
-    }
-    public void setFirstBossSpawn(bool status)
-    {
-        firstBossSpawn = status;
     }
 
     //getters

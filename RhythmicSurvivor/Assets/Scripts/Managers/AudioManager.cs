@@ -47,6 +47,10 @@ public class AudioManager : MonoBehaviour
     {
         audioSource.UnPause();
     }
+    public void stopMusic()
+    {
+        audioSource.Stop();
+    }
 
     //getters
     public float getBPM()

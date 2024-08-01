@@ -54,6 +54,8 @@ public class Enemy : MonoBehaviour
             else if(Vector3.Distance(transform.position, player.transform.position) <  rangeAttack && audioManager.isHitBeat() && !attackInCooldown)
             {
                 isAttacking = true;
+                Vector3 dir = Vector3.Normalize(player.transform.position - transform.position);
+                transform.rotation = Quaternion.LookRotation(dir);
                 animator.Play("Attack");
                 StartCoroutine(attackTime());
 
