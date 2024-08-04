@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\assets\\scripts\\managers\\mygamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\mygamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\assets\\scripts\\characters\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characters\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\rhythmicsurvivor\\assets\\scripts\\gui\\guimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\assets\\scripts\\gui\\guimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gui\\guimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\assets\\scripts\\characters\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characters\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|d:\\misprojectos\\rhythmic-survivor-demo\\rhythmicsurvivor\\assets\\scripts\\managers\\mygamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\mygamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6158E682-B897-08AE-548B-B61B9B2D4F95}|Assembly-CSharp.csproj|D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\assets\\scripts\\attacks\\enemyattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -62,15 +62,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\Characters\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Characters\\Player.cs",
               "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\Characters\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Characters\\Player.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAuwLgAAAAjAAAA",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAAwJwAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T01:11:34.545Z"
+              "WhenOpened": "2024-08-01T01:11:34.545Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -92,14 +93,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GUI\\GUIManager.cs",
               "ToolTip": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\GUI\\GUIManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GUI\\GUIManager.cs",
-              "ViewState": "AQIAAPMAAAAAAAAAAAAxwPwAAAApAAAA",
+              "ViewState": "AQIAAPQAAAAAAAAAAAAAAPwAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T14:10:26.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MyGameManager.cs",
               "DocumentMoniker": "D:\\MisProjectos\\Rhythmic-Survivor-Demo\\RhythmicSurvivor\\Assets\\Scripts\\Managers\\MyGameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\MyGameManager.cs",
